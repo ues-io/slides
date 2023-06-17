@@ -7,16 +7,87 @@ definition:
     - uesio/io.box:
         components:
           - uesio/io.grid:
-              items:
-                - uesio/io.image:
-                    loading: lazy
-                    file: uesio/core.logowhite
-                    width: 100
               uesio.styleTokens:
                 root:
                   - items-center
-                  - h-full
                   - justify-center
+                  - justify-items-center
+                  - inset-0
+                  - absolute
+                  - bg-black
+              items:
+                - ben/mosaic.mosaic:
+                    text: uesio
+                    font: "monospace"
+                    backgroundColor: rgb(80,80,80)
+                    uesio.styleTokens:
+                      root:
+                        - absolute
+                        - w-full
+                        - gap-[0.8%]
+                      cell:
+                        - rounded-full
+                    color: white
+                    size: 92
+                    fontSize: 22
+          - uesio/io.grid:
+              uesio.styleTokens:
+                root:
+                  - items-center
+                  - justify-center
+                  - justify-items-center
+                  - inset-0
+                  - absolute
+                  - bg-cover
+                  - bg-[url($File{uesio/core.splash})]
+                  - mix-blend-overlay
+                  - animate-pulse
+          - uesio/io.grid:
+              uesio.display:
+                - type: paramValue
+                  param: step
+                  value: "0"
+              uesio.styleTokens:
+                root:
+                  - items-center
+                  - justify-center
+                  - justify-items-center
+                  - inset-0
+                  - absolute
+              items:
+                - uesio/io.text:
+                    uesio.styleTokens:
+                      root:
+                        - text-white
+                        - font-[Gosha]
+                        - text-6xl
+                        - absolute
+                        - bottom-0
+                        - m-28
+                    text: Early Access
+          - uesio/io.grid:
+              uesio.display:
+                - type: paramValue
+                  param: step
+                  value: "0"
+              uesio.styleTokens:
+                root:
+                  - items-center
+                  - justify-center
+                  - justify-items-center
+                  - inset-0
+                  - absolute
+                  - m-28
+                  - rounded-3xl
+                  - bg-black
+              items:
+                - uesio/io.text:
+                    uesio.styleTokens:
+                      root:
+                        - text-white
+                        - font-[Gosha]
+                        - text-6xl
+                    text: Another Slide
         uesio.styleTokens:
           root:
             - bg-slate-900

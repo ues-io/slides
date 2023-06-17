@@ -1,7 +1,7 @@
 name: ben/slides
 dependencies:
   ben/mosaic:
-    version: v0.0.1
+    version: v0.0.4
   uesio/builder:
     version: v0.0.1
   uesio/core:
