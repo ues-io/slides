@@ -3,4 +3,21 @@ definition:
   # Wires connect to data in collections
   wires: {}
   # Components determine the layout and composition of your view
-  components: []
+  components:
+    - uesio/io.box:
+        components:
+          - uesio/io.grid:
+              items:
+                - uesio/io.image:
+                    loading: lazy
+                    file: uesio/core.logowhite
+                    width: 100
+              uesio.styleTokens:
+                root:
+                  - items-center
+                  - h-full
+                  - justify-center
+        uesio.styleTokens:
+          root:
+            - bg-slate-900
+            - h-full
