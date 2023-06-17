@@ -1,0 +1,7 @@
+name: presentation
+path: presentation
+view: ben/slides.home
+theme: uesio/core.default
+title: ""
+params:
+  step: "0"
