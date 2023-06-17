@@ -1,18 +1,29 @@
-import { styles, definition } from "@uesio/ui"
+import { definition, hooks, api } from "@uesio/ui"
 
-type ComponentDefinition = {
-	text: string
-}
+const Component: definition.UC = ({ context }) => {
+	const getCurrentStep = () => parseInt(context.getParam("step") || "0", 10)
 
-const Component: definition.UC<ComponentDefinition> = (props) => {
-	const { text } = props.definition
-	const classes = styles.useStyleTokens(
-		{
-			root: ["text-green-600"],
-		},
-		props
-	)
-	return <div className={classes.root}>{props.context.merge(text)}</div>
+	const navigateToStep = (step: number) =>
+		api.signal.run(
+			{
+				signal: "route/NAVIGATE",
+				path: `presentation/${step}`,
+			},
+			context
+		)
+
+	hooks.useHotKeyCallback("right", () => {
+		console.log("forward", context.getParam("step"))
+		navigateToStep(getCurrentStep() + 1)
+	})
+
+	hooks.useHotKeyCallback("left", () => {
+		console.log("backward", context.getParam("step"))
+		const currentStep = getCurrentStep()
+		if (currentStep === 0) return
+		navigateToStep(currentStep - 1)
+	})
+	return null
 }
 
 export default Component

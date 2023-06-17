@@ -1,0 +1,13 @@
+name: slide
+label: Slide
+definition:
+  uesio.styleTokens:
+    root:
+      - items-center
+      - justify-center
+      - justify-items-center
+      - inset-0
+      - absolute
+      - m-28
+      - rounded-[40px]
+      - bg-black

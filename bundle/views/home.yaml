@@ -6,6 +6,7 @@ definition:
   components:
     - uesio/io.box:
         components:
+          - ben/slides.stepper:
           - uesio/io.grid:
               uesio.styleTokens:
                 root:
@@ -64,30 +65,34 @@ definition:
                         - absolute
                         - bottom-0
                         - m-28
-                    text: Early Access
+                    text: Early Access Webinar
           - uesio/io.grid:
               uesio.display:
                 - type: paramValue
                   param: step
                   value: "2"
-              uesio.styleTokens:
-                root:
-                  - items-center
-                  - justify-center
-                  - justify-items-center
-                  - inset-0
-                  - absolute
-                  - m-28
-                  - rounded-3xl
-                  - bg-black
+              uesio.variant: ben/slides.slide
               items:
-                - uesio/io.text:
+                - uesio/io.box:
                     uesio.styleTokens:
                       root:
-                        - text-white
-                        - font-[Gosha]
-                        - text-6xl
-                    text: Another Slide
+                        - text-center
+                    components:
+                      - uesio/io.image:
+                          uesio.styleTokens:
+                            root:
+                              - m-auto
+                          width: 100
+                          file: uesio/core.logowhite
+                      - uesio/io.text:
+                          element: div
+                          uesio.styleTokens:
+                            root:
+                              - text-white
+                              - font-[Gosha]
+                              - text-xl
+                              - m-4
+                          text: ( yoo - zee - oh )
         uesio.styleTokens:
           root:
             - bg-slate-900
