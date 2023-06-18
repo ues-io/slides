@@ -1,7 +1,5 @@
-name: presentation
-path: presentation
+name: presentationstep
+path: presentation/{step}
 view: ben/slides.home
-params:
-  step: "0"
 theme: uesio/core.default
 title: ""

@@ -2,6 +2,7 @@ name: stepper
 category: DATA
 pack: main
 entrypoint: components/stepper/stepper
+slots: null
 title: Stepper
 discoverable: true
 description: A sample component that outputs text
@@ -17,3 +18,5 @@ sections:
       - text
   - type: STYLES
   - type: DISPLAY
+signals: null
+styleRegions: null

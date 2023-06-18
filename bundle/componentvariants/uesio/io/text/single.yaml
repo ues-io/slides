@@ -1,6 +1,6 @@
 name: single
-label: Single
 extends: ben/slides.main
+label: Single
 definition:
   element: div
   uesio.styleTokens:
