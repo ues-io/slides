@@ -1,0 +1,8 @@
+name: main
+label: Main
+definition:
+  uesio.styleTokens:
+    root:
+      - text-white
+      - font-[Gosha]
+      - text-5xl

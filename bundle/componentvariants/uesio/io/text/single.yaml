@@ -1,0 +1,9 @@
+name: single
+label: Single
+extends: ben/slides.main
+definition:
+  element: div
+  uesio.styleTokens:
+    root:
+      - mx-20
+      - my-6

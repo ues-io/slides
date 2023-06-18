@@ -1,0 +1,14 @@
+name: coder
+category: DATA
+pack: main
+entrypoint: components/coder/coder
+title: Coder
+discoverable: true
+description: A sample component that outputs text
+properties:
+defaultDefinition:
+sections:
+  - type: HOME
+    properties:
+  - type: STYLES
+  - type: DISPLAY
