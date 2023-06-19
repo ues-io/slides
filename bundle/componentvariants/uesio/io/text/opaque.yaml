@@ -1,0 +1,8 @@
+name: opaque
+extends: ben/slides.single
+label: Opaque
+definition:
+  element: div
+  uesio.styleTokens:
+    root:
+      - text-black

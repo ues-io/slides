@@ -11,6 +11,10 @@ const Component: definition.UC = (props) => {
 	<span class="magic">has</span>
 	<span class="zebras">declarative</span>
 	roots.
+	<br>
+	<br>
+	<br>
+	Writing documents for the web was easy.
 </div>`
 	)
 	const [css, setCSS] = useState(

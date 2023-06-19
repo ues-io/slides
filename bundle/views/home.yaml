@@ -42,7 +42,6 @@ definition:
                   - bg-cover
                   - bg-[url($File{uesio/core.splash})]
                   - mix-blend-overlay
-                  - animate-pulse
           - uesio/io.grid:
               uesio.display:
                 - type: paramValue
@@ -57,15 +56,14 @@ definition:
                   - absolute
               items:
                 - uesio/io.text:
+                    uesio.variant: ben/slides.main
                     uesio.styleTokens:
                       root:
-                        - text-white
-                        - font-[Gosha]
                         - text-6xl
                         - absolute
                         - bottom-0
                         - m-24
-                    text: Early Access
+                    text: Early Access Intro
           - uesio/io.grid:
               uesio.display:
                 - type: paramValue
@@ -144,9 +142,16 @@ definition:
                           uesio.display:
                             - type: paramValue
                               param: step
+                              value: "4"
+                          uesio.variant: ben/slides.opaque
+                          text: for the web.
+                      - uesio/io.text:
+                          uesio.display:
+                            - type: paramValue
+                              param: step
                               value: "5"
                           uesio.variant: ben/slides.single
-                          text: for the web
+                          text: for the web.
           - uesio/io.grid:
               uesio.display:
                 - type: paramValue
@@ -181,6 +186,9 @@ definition:
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.text:
+                    uesio.variant: ben/slides.smalltitle
+                    text: "Part 1: The Past"
+                - uesio/io.text:
                     uesio.variant: ben/slides.main
                     uesio.styleTokens:
                       root:
@@ -191,6 +199,30 @@ definition:
                 - type: paramValue
                   param: step
                   value: "8"
+              uesio.variant: ben/slides.slide
+              items:
+                - uesio/io.text:
+                    uesio.variant: ben/slides.smalltitle
+                    text: "Part 1: The Past"
+                - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - text-center
+                    components:
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.sub
+                          text: "The web began as a"
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.main
+                          text: "Document Platform"
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.subopaque
+                          text: "."
+          - uesio/io.grid:
+              uesio.display:
+                - type: paramValue
+                  param: step
+                  value: "9"
               uesio.variant: ben/slides.slide
               uesio.styleTokens:
                 root:
@@ -203,12 +235,348 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "9"
+                  value: "10"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.text:
+                    uesio.variant: ben/slides.smalltitle
+                    text: "Part 1: The Past"
+                - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - flex
+                        - justify-center
+                        - items-center
+                    components:
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.main
+                          text: "Document Platform + "
+                      - uesio/io.image:
+                          uesio.styleTokens:
+                            root:
+                              - m-6
+                          width: 100
+                          file: ben/slides.jslogo
+          - uesio/io.grid:
+              uesio.display:
+                - type: paramValue
+                  param: step
+                  value: "11"
+              uesio.variant: ben/slides.slide
+              items:
+                - uesio/io.text:
+                    uesio.variant: ben/slides.smalltitle
+                    text: "Part 1: The Past"
+                - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - text-center
+                    components:
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.sub
+                          text: "The web became an"
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.main
+                          text: "Application Platform"
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.subopaque
+                          text: "."
+          - uesio/io.grid:
+              uesio.display:
+                - type: paramValue
+                  param: step
+                  value: "12"
+              uesio.variant: ben/slides.slide
+              items:
+                - uesio/io.text:
+                    uesio.variant: ben/slides.smalltitle
+                    text: "Part 1: The Past"
+                - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - text-center
+                    components:
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "Documents → Applications"
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "Static → Interactive"
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "Simple → Complex"
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "Distributed → Centralized"
+          - uesio/io.grid:
+              uesio.display:
+                - type: paramValue
+                  param: step
+                  value: "13"
+              uesio.variant: ben/slides.slide
+              items:
+                - uesio/io.text:
+                    uesio.variant: ben/slides.smalltitle
+                    text: "Part 1: The Past"
+                - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - text-center
+                    components:
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          uesio.styleTokens:
+                            root:
+                              - text-3xl
+                          text: "Researchers → Web Masters → Software Engineers"
+          - uesio/io.grid:
+              uesio.display:
+                - type: paramValue
+                  param: step
+                  value: "14"
+              uesio.variant: ben/slides.slide
+              items:
+                - uesio/io.text:
+                    uesio.variant: ben/slides.smalltitle
+                    text: "Part 1: The Past"
+                - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - text-center
+                    components:
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          uesio.styleTokens:
+                            root:
+                              - text-2xl
+                          text: "What do we call everyone else?"
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.opaque
+                          uesio.styleTokens:
+                            root:
+                              - text-9xl
+                          text: Users
+          - uesio/io.grid:
+              uesio.display:
+                - type: paramValue
+                  param: step
+                  value: "15"
+              uesio.variant: ben/slides.slide
+              items:
+                - uesio/io.text:
+                    uesio.variant: ben/slides.smalltitle
+                    text: "Part 1: The Past"
+                - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - text-center
+                    components:
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          uesio.styleTokens:
+                            root:
+                              - text-2xl
+                          text: "What do we call everyone else?"
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          uesio.styleTokens:
+                            root:
+                              - text-9xl
+                          text: Users
+          - uesio/io.grid:
+              uesio.display:
+                - type: paramValue
+                  param: step
+                  value: "16"
+              uesio.variant: ben/slides.slide
+              items:
+                - uesio/io.text:
+                    uesio.variant: ben/slides.smalltitle
+                    text: "Part 2: The Present"
+                - uesio/io.text:
                     uesio.variant: ben/slides.main
-                    text: "Document Platform"
+                    uesio.styleTokens:
+                      root:
+                        - text-9xl
+                    text: "2023"
+          - uesio/io.grid:
+              uesio.display:
+                - type: paramValue
+                  param: step
+                  value: "17"
+              uesio.variant: ben/slides.slide
+              items:
+                - uesio/io.text:
+                    uesio.variant: ben/slides.smalltitle
+                    text: "Part 2: The Present"
+                - uesio/io.text:
+                    uesio.variant: ben/slides.main
+                    text: "Three Troublesome Trends"
+          - uesio/io.grid:
+              uesio.display:
+                - type: paramValue
+                  param: step
+                  value: "18"
+              uesio.variant: ben/slides.slide
+              items:
+                - uesio/io.text:
+                    uesio.variant: ben/slides.smalltitle
+                    text: "Part 2: The Present"
+                - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - text-center
+                    components:
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "1. Complexity"
+          - uesio/io.grid:
+              uesio.display:
+                - type: paramValue
+                  param: step
+                  value: "19"
+              uesio.variant: ben/slides.slide
+              items:
+                - uesio/io.text:
+                    uesio.variant: ben/slides.smalltitle
+                    text: "Part 2: The Present"
+                - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - text-center
+                    components:
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "Architecture: SPA? RSC? Serverless?"
+                          uesio.styleTokens:
+                            root:
+                              - text-2xl
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "SSR: QWIK? NextJS? Remix? Netlify?"
+                          uesio.styleTokens:
+                            root:
+                              - text-2xl
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "Bundler: EsBuild? Vite? Webpack? SWC? Turbo?"
+                          uesio.styleTokens:
+                            root:
+                              - text-2xl
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "Component Lifecycle: React? Vue? Angular? Solid? Svelte?"
+                          uesio.styleTokens:
+                            root:
+                              - text-2xl
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "State Management: Redux? State Machines? MobX?"
+                          uesio.styleTokens:
+                            root:
+                              - text-2xl
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "Data Store: NoSQL? Postgres? MySQL? Mongo? Redis?"
+                          uesio.styleTokens:
+                            root:
+                              - text-2xl
+          - uesio/io.grid:
+              uesio.display:
+                - type: paramValue
+                  param: step
+                  value: "20"
+              uesio.variant: ben/slides.slide
+              items:
+                - uesio/io.text:
+                    uesio.variant: ben/slides.smalltitle
+                    text: "Part 2: The Present"
+                - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - text-center
+                    components:
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "Can we think mostly about"
+                          uesio.styleTokens:
+                            root:
+                              - text-xl
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "what"
+                          uesio.styleTokens:
+                            root:
+                              - text-9xl
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "instead of"
+                          uesio.styleTokens:
+                            root:
+                              - text-xl
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "how?"
+                          uesio.styleTokens:
+                            root:
+                              - text-5xl
+          - uesio/io.grid:
+              uesio.display:
+                - type: paramValue
+                  param: step
+                  value: "21"
+              uesio.variant: ben/slides.slide
+              items:
+                - uesio/io.text:
+                    uesio.variant: ben/slides.smalltitle
+                    text: "Part 2: The Present"
+                - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - text-center
+                    components:
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "Can we think about"
+                          uesio.styleTokens:
+                            root:
+                              - text-xl
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "patterns"
+                          uesio.styleTokens:
+                            root:
+                              - text-8xl
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "instead of"
+                          uesio.styleTokens:
+                            root:
+                              - text-xl
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "commands?"
+                          uesio.styleTokens:
+                            root:
+                              - text-5xl
+          - uesio/io.grid:
+              uesio.display:
+                - type: paramValue
+                  param: step
+                  value: "22"
+              uesio.variant: ben/slides.slide
+              items:
+                - uesio/io.text:
+                    uesio.variant: ben/slides.smalltitle
+                    text: "Part 2: The Present"
+                - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - text-center
+                    components:
+                      - uesio/io.text:
+                          uesio.variant: ben/slides.single
+                          text: "2. Content and Control"
         uesio.styleTokens:
           root:
             - bg-slate-900

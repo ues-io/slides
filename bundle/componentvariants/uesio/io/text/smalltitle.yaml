@@ -1,0 +1,15 @@
+name: smalltitle
+label: Small Title
+definition:
+  uesio.styleTokens:
+    root:
+      - text-slate-200
+      - font-[Gosha]
+      - text-lg
+      - absolute
+      - top-0
+      - left-0
+      - right-0
+      - px-8
+      - py-4
+      - tracking-wide

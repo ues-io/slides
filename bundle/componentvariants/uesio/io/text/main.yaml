@@ -3,6 +3,6 @@ label: Main
 definition:
   uesio.styleTokens:
     root:
-      - text-white
+      - text-slate-200
       - font-[Gosha]
       - text-5xl

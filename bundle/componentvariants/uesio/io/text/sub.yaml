@@ -1,0 +1,9 @@
+name: sub
+extends: ben/slides.main
+label: Sub
+definition:
+  element: div
+  uesio.styleTokens:
+    root:
+      - text-2xl
+      - p-4

@@ -1,0 +1,8 @@
+name: subopaque
+extends: ben/slides.sub
+label: Sub Opaque
+definition:
+  element: div
+  uesio.styleTokens:
+    root:
+      - text-black
