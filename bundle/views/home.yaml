@@ -15,60 +15,13 @@ definition:
                   - justify-items-center
                   - inset-0
                   - absolute
-                  - bg-black
-              items:
-                - ben/mosaic.mosaic:
-                    text: uesio
-                    font: "monospace"
-                    backgroundColor: rgb(80,80,80)
-                    uesio.styleTokens:
-                      root:
-                        - absolute
-                        - w-full
-                        - gap-[0.8%]
-                      cell:
-                        - rounded-full
-                    color: white
-                    size: 92
-                    fontSize: 22
-          - uesio/io.grid:
-              uesio.styleTokens:
-                root:
-                  - items-center
-                  - justify-center
-                  - justify-items-center
-                  - inset-0
-                  - absolute
                   - bg-cover
                   - bg-[url($File{uesio/core.splash})]
-                  - mix-blend-overlay
           - uesio/io.grid:
               uesio.display:
                 - type: paramValue
                   param: step
                   value: "1"
-              uesio.styleTokens:
-                root:
-                  - items-center
-                  - justify-center
-                  - justify-items-center
-                  - inset-0
-                  - absolute
-              items:
-                - uesio/io.text:
-                    uesio.variant: ben/slides.main
-                    uesio.styleTokens:
-                      root:
-                        - text-6xl
-                        - absolute
-                        - bottom-0
-                        - m-24
-                    text: Early Access Intro
-          - uesio/io.grid:
-              uesio.display:
-                - type: paramValue
-                  param: step
-                  value: "2"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.box:
@@ -95,7 +48,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "3"
+                  value: "2"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.box:
@@ -123,8 +76,8 @@ definition:
                   param: step
                   operator: IN
                   values:
+                    - "3"
                     - "4"
-                    - "5"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.box:
@@ -156,7 +109,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "6"
+                  value: "5"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.box:
@@ -182,7 +135,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "7"
+                  value: "6"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.text:
@@ -198,7 +151,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "8"
+                  value: "7"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.text:
@@ -222,7 +175,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "9"
+                  value: "8"
               uesio.variant: ben/slides.slide
               uesio.styleTokens:
                 root:
@@ -235,7 +188,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "10"
+                  value: "9"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.text:
@@ -261,7 +214,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "11"
+                  value: "10"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.text:
@@ -285,7 +238,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "12"
+                  value: "11"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.text:
@@ -312,7 +265,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "13"
+                  value: "12"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.text:
@@ -333,7 +286,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "14"
+                  value: "13"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.text:
@@ -360,7 +313,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "15"
+                  value: "14"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.text:
@@ -387,7 +340,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "16"
+                  value: "15"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.text:
@@ -403,7 +356,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "17"
+                  value: "16"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.text:
@@ -416,7 +369,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "18"
+                  value: "17"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.text:
@@ -434,7 +387,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "19"
+                  value: "18"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.text:
@@ -485,7 +438,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "20"
+                  value: "19"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.text:
@@ -524,7 +477,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "21"
+                  value: "20"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.text:
@@ -563,7 +516,7 @@ definition:
               uesio.display:
                 - type: paramValue
                   param: step
-                  value: "22"
+                  value: "21"
               uesio.variant: ben/slides.slide
               items:
                 - uesio/io.text:
