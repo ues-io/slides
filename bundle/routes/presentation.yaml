@@ -1,7 +1,9 @@
 name: presentation
 path: presentation
 view: ben/slides.home
+redirect: ""
 params:
   step: "0"
 theme: uesio/core.default
+type: ""
 title: ""

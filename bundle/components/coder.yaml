@@ -6,6 +6,8 @@ slots: null
 title: Coder
 discoverable: true
 description: A sample component that outputs text
+properties: null
+defaultDefinition: null
 sections:
   - type: HOME
     properties:

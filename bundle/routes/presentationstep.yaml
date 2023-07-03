@@ -1,5 +1,7 @@
 name: presentationstep
 path: presentation/{step}
 view: ben/slides.home
+redirect: ""
 theme: uesio/core.default
+type: ""
 title: ""

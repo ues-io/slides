@@ -1,0 +1,4 @@
+name: public
+permissionSets:
+  - ben/slides.public
+  - uesio/core.public

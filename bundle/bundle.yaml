@@ -1,4 +1,5 @@
 name: ben/slides
+publicProfile: ben/slides.public
 dependencies:
   uesio/builder:
     version: v0.0.1
